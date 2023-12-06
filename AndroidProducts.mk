@@ -1,4 +1,4 @@
-# Copyright (C) 2023 PixysOS
+# Copyright (C) 2023 risingOS
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,9 +13,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/pixys_miatoll.mk
+    $(LOCAL_DIR)/rising_miatoll.mk
 
 COMMON_LUNCH_CHOICES := \
-    pixys_miatoll-user \
-    pixys_miatoll-userdebug \
-    pixys_miatoll-eng
+    rising_miatoll-user \
+    rising_miatoll-userdebug \
+    rising_miatoll-eng
