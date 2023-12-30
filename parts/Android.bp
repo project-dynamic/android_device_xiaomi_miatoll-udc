@@ -16,7 +16,7 @@ android_app {
 
     overrides: ["MusicFX"],
     static_libs: [
-        "com.tequila.settings.resources",
+        "org.lineageos.settings.resources",
     ],
 
     optimize: {
