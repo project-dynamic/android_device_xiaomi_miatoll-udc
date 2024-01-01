@@ -12,21 +12,27 @@
     "target_path": "hardware/xiaomi"
   },
   {
-    "branch": "lineage-21.0"
+    "branch": "lineage-21.0",
     "remote": "github",
     "repository": "LineageOS/android_packages_resources_devicesettings",
-    "target_path": "packages/resources/devicesettings",
+    "target_path": "packages/resources/devicesettings"
   },
   {
-    "branch": "fourteen"
+    "branch": "fourteen",
     "remote": "github",
     "repository": "SuperiorOS-Devices/kernel_xiaomi_sm6250",
     "target_path": "kernel/xiaomi/sm6250"
   },
   {
-    "branch": "fourteen"
+    "branch": "fourteen",
     "remote": "github",
     "repository": "SuperiorOS-Devices/vendor_xiaomi_miatoll",
     "target_path": "vendor/xiaomi/miatoll"
+  },
+  {
+    "branch": "main",
+    "remote": "github",
+    "repository": "Positron-B/vendor_xiaomi_miuicamera",
+    "target_path": "vendor/xiaomi/miuicamera"
   }
 ]
