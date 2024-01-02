@@ -95,25 +95,6 @@ vendor/lib/libqtigef.so
 vendor/lib/libssrec.so
 vendor/lib/libsurround_3mic_proc.so
 
-# Audio (Dolby)
--vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service
-vendor/etc/dolby/dax-default.xml
-vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc
-vendor/etc/media_codecs_dolby_audio.xml
-vendor/etc/vintf/manifest/manifest_vendor.dolby.hardware.dms.xml
--vendor/lib/libdapparamstorage.so
--vendor/lib/libdeccfg.so
--vendor/lib/libstagefright_soft_ac4dec.so
--vendor/lib/libstagefright_soft_ddpdec.so
--vendor/lib/soundfx/libhwdap.so
--vendor/lib/soundfx/libswgamedap.so
--vendor/lib/soundfx/libswvqe.so
--vendor/lib/vendor.dolby.hardware.dms@2.0.so
--vendor/lib64/libdapparamstorage.so
--vendor/lib64/libdlbdsservice.so
--vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so
--vendor/lib64/vendor.dolby.hardware.dms@2.0.so
-
 # Audio FX modules
 vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libqcbassboost.so
@@ -552,6 +533,46 @@ vendor/lib64/libcvp.so
 vendor/lib64/libcvp_common.so
 vendor/lib64/libcvp_stub.so
 vendor/lib64/vendor.qti.hardware.cvp@1.0.so
+
+# Dolby (App) - from OnePlus
+system_ext/etc/sysconfig/config-com.dolby.daxappui.xml|fce084b5ea52db53d25a7bbf64d8c7ce
+system_ext/etc/sysconfig/config-com.dolby.daxservice.xml|cd1424d569038a393fccadb457c930c2
+system_ext/etc/sysconfig/hiddenapi-com.dolby.daxservice.xml|3d8dfe8008f667cf2b3572983c08c3af
+system_ext/priv-app/DaxUI/DaxUI.apk|feae263be94cabae10ade62f50fb7051
+system_ext/priv-app/daxService/daxService.apk;OVERRIDES=AudioFX,MusicFX|2e2c5f6939d7545c7f59fa2b15deb727
+
+# Dolby - from haydn V14.0.6.0.TKKMIXM
+system/lib/vendor.dolby.hardware.dms@2.0.so|04e911fbccf56946551bebe9226a41d05d1a5103
+system/lib64/vendor.dolby.hardware.dms@2.0.so|d98f91b9dcc181bcf0c6b5d92ae7d19f354208f9
+vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service|abb488266210701d992770a6dfd44273ab3cc619
+vendor/etc/dolby/dax-default.xml|9dcb9dd045f2e3229e74f4b06f0aa5b12ba02c49|4aeb4692532a9098a6f50b7b5d77c273fae1c146
+vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc|a3560b5167cf489ea2a463431cf4720facf699b9
+vendor/etc/media_codecs_dolby_audio.xml|6a1d05ada373493db74a8629968a1a1ed4e98b00
+vendor/lib/libdapparamstorage.so|4c1294621d73a88c144ba7f38bcc68399f13ea32
+vendor/lib/libdeccfg.so|605285c8ce33bcdf4fda589bc3472f180f7675e8
+vendor/lib/vendor.dolby.hardware.dms@2.0.so|3324c7be3a8cd4af70b20d99e03be8803eb98936
+vendor/lib64/libdapparamstorage.so|2debda2930eb080f1055d2de8c4978ba6c9a2fd3
+vendor/lib64/libdeccfg.so|955817f32eac68ca442755af141964a1fddb8636
+vendor/lib64/libdlbdsservice.so|527367957bdefdd45c28e560a4a4ba8aa46e91e0
+vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so|f0a080dba587baa6443365b027a59a2981c0d54d
+vendor/lib64/vendor.dolby.hardware.dms@2.0.so|26ffa586f42eb999e415a40113ded2c99fc4d0b2
+-vendor/etc/vintf/manifest/manifest_vendor.dolby.hardware.dms.xml|c8095f649de19b80271fb429b4b6b439297a0678
+
+# Dolby (SoundFX) - from haydn V14.0.6.0.TKKMIXM
+vendor/lib/soundfx/libhwdap.so|a1c9c719f00964d275102ac11c4e18051020dca1
+vendor/lib/soundfx/libswgamedap.so|d20e9e210049053dc61480012aa73c73525de515
+vendor/lib/soundfx/libswvqe.so|35709686078841eb842f13b91ed807dff45f91e8
+vendor/lib64/soundfx/libhwdap.so|dd479d74ef6fe5ec56c16c25c12aacbbd5b09549
+vendor/lib64/soundfx/libswgamedap.so|dfa48badca66119b20840db23a231447579bc396
+vendor/lib64/soundfx/libswvqe.so|741ac6a67d22d6574560569b3cdefeff7b066efd
+
+# Dolby (Media Codecs) - from haydn V14.0.6.0.TKKMIXM
+vendor/lib/libstagefright_soft_ac4dec.so|ba91e5f4bf695fa72fd76746cd106458f645b9a9
+vendor/lib/libstagefright_soft_ddpdec.so|ab0b0e549923203bf809b76758f1ea874c02ff55
+vendor/lib/libstagefrightdolby.so|144a4a8a5c56c25387b8bba595a3b037f29b6ab2
+vendor/lib64/libstagefright_soft_ac4dec.so|26e68e185548b31c92fd043eb117bbe9cdf4f617
+vendor/lib64/libstagefright_soft_ddpdec.so|323690ffb4734ae6a4f101569928890c5e2226f3
+vendor/lib64/libstagefrightdolby.so|25b70fc4a81ee8361d5b8a55a4ee2663c31c97f6
 
 # DPM (system) - from LA.QSSI.14.0.r1-10000.01-qssi.0
 system/framework/tcmclient.jar|4e1dfaa243c67fec31b5a44086c9c417892761ae

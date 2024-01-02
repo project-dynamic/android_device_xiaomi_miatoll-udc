@@ -99,27 +99,8 @@
     <string name="clear_speaker_summary">Play a 30-second audio to clear the speaker</string>
     <string name="clear_speaker_description">Run this feature once or twice if you find that your speaker is lightly blocked by dust. Set media volume to maximum.\n\nIf the speaker is blocked heavily, run this feature 2-5 times while shaking your device with the speaker facing downwards.\n\nWARNING: Ensure that any headphones are unplugged.</string>
 
-    <!-- Dolby Atmos -->
+    <!-- Dolby -->
     <string name="dolby_title">Dolby Atmos</string>
-    <string name="dolby_enable">Use Dolby Atmos</string>
-    <string name="dolby_profile_title">Choose a profile</string>
-    <string name="dolby_preset">Equalizer preset</string>
-    <string name="dolby_profile_dynamic">Dynamic</string>
-    <string name="dolby_off">Off</string>
-    <string name="dolby_on">On</string>
-    <string name="dolby_low">Low</string>
-    <string name="dolby_medium">Medium</string>
-    <string name="dolby_high">High</string>
-    <string name="dolby_max">Max</string>
-    <string name="dolby_unknown">Unknown</string>
-    <string name="dolby_on_with_profile">On (%1$s)</string>
-    <string name="dolby_category_settings">Settings</string>
-    <string name="dolby_bass_enhancer">Bass enhancer</string>
-    <string name="dolby_dialogue_enhancer">Dialogue enhancer</string>
-    <string name="dolby_virtualizer">Surround virtualizer</string>
-    <string name="dolby_volume_leveler">Volume leveler</string>
-    <string name="dolby_connect_headphones">Connect headphones</string>
-    <string name="dolby_reset_profile">Reset to defaults</string>
-    <string name="dolby_reset_profile_toast">Succesfully reset settings for %1$s profile</string>
+    <string name="dolby_summary">Setting Dolby Atmos</string>
 
 </resources>

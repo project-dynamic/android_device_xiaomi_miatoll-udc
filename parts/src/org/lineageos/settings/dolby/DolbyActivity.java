@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2018 The LineageOS Project
+ * Copyright (C) 2024 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,20 +16,31 @@
 
 package org.lineageos.settings.dolby;
 
+import android.content.ComponentName;
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Toast;
 
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
-import com.android.settingslib.widget.R;
 
 public class DolbyActivity extends CollapsingToolbarBaseActivity {
 
-    private static final String TAG_DOLBY = "dolby";
+    private static final String DAX_PACKAGE_NAME = "com.dolby.daxappui";
+    private static final String DAX_ACTIVITY = "com.dolby.daxappui.MainActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+        // super.onCreate(savedInstanceState);
 
-        getFragmentManager().beginTransaction().replace(R.id.content_frame,
-                new DolbySettingsFragment(), TAG_DOLBY).commit();
+        ComponentName componentName = new ComponentName(DAX_PACKAGE_NAME, DAX_ACTIVITY);
+        Intent intent = new Intent();
+        intent.setComponent(componentName);
+        startActivity(intent);
+        // if (intent != null) {
+        //     startActivity(intent);
+        // } else {
+        //     Toast.makeText(getApplicationContext(), "DaxUI not installed", Toast.LENGTH_SHORT).show();  
+        // }
+
     }
 }
